@@ -1,0 +1,45 @@
+4
+Dungeon_Entrance
+As you walk through the final few meters of the forested path, you finally enter a small clearing, exactly as the old palmreader said you would.  The clearing is at the base of a cliff and is dotted by several small stone ruins.  The ruins themselves are covered in moss and have lied undesturbed for what appears to be centuries.  After a few minutes of searching, you uncover a stone stairwell leading down, just as the palm reader said!  Before you head down, you decide to get your bearings.
+You stand in the clearing at the base of the cliff.  Ruins are scattered about the clearing, and one of them contains a staircase downward.
+2
+Go down the stairs;None
+Go:Portcullis_Room
+Pick up the stick;None
+Remove_Choice:Pick up the stick^Inventory_Add:Stick
+Portcullis_Room
+At the base of the stairs, you see a short hallway which ends abruptly in a half-opened portcullis.  There are two chains dangling from the ceiling in the room.  Upon closer inspection, the chains seem to be coming from their own respective holes in the ceiling.  The two chains are themselves above a hole in the floor covered by a metal grate.  You cannot see the bottom.  The grate appears strong enough to hold your weight. 
+You stand in the portcullis room.  The two chains dangle from their apertures in the ceiling.
+4
+Pull the left chain;None
+Death:You pull the chain.  The drain beneath you opens with a lurch and you fall to your death!
+Pull the right chain;None
+Death:You pull the chain.  The drain beneath you opens with a lurch and you fall to your death!
+Duck under the portcullis;None
+Go:Forked_Path
+Climb up the stairs;None
+Go:Dungeon_Entrance
+Forked_Path
+The room you now find yourself in has opened vastly.  You proceed forward for a bit until you are stopped by a deep chasm.  You cannot see the bottom.  It seems the floor ends at this point, as the chasm extends to the walls of this room.  There is a bridge leading to what appears to be a small "island" of land, from which three other bridges extend.
+You are in a vast room on the precipice of a deep chasm.  A bridge leads from your side of the chasm to a small land mass, from which extends three other bridges.
+5
+Look at the bridges;None
+Examine:The bridges to the east and west look stable.  The bridge to the north looks like it would fall under your weight.
+Go across the north bridge;None
+Death:You begin walking across the bridge.  It sways under your weight.  As you get halfway across, the bridge collapses!  You fall to your death!
+Go across the west bridge;None
+Go:Crystal_Cave
+Go across the east bridge;None
+Go:East_Room
+Go under the portcullis;None
+Go:Portcullis_Room
+Crystal_Cave
+The room across the west bridge descends a rocky slope.  At the bottom, you see a cavern lined with large purple crystal structures.  In the center of the crystal cavern a circle is drawn in salt.  The interior of the circle appears slightly smoother than the area outside.  There is no other exit from the room other than the way you came.
+The crystal cavern exudes a peaceful atmosphere.  The salt circle lies in the center of the room.
+3
+Turn around and leave;None
+Go:Forked_Path
+Scatter the salt circle;Flag:Salt_Circle_Whole
+Examine:You scatter the salt circle.^Flag_Add:Salt_Circle_Broken^Flag_Remove:Salt_Circle_Whole^Change_Description:The crystal cavern somehow exudes a hostile aura.  What remains of the salt circle is scattered around the room.
+Gather the salt into a circle;Flag:Salt_Circle_Broken
+Examine:You reform the scattered salt back into a solid circle.^Flag_Add:Salt_Circle_Whole^Flag_Remove:Salt_Circle_Broken^Change_Description:The crystal cavern exudes a peaceful atmosphere.  The salt circle lies in the center of the room.

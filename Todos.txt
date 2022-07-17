@@ -1,0 +1,7 @@
+1. print using f string
+2. print using .format
+3. print using a multi-liner 
+4. print with some escape characters
+5. assign and do math to int variables
+6. make a function that takes an input and does math to it and returns it
+7. make a function that returns an "array?" of items
